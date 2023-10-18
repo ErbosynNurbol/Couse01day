@@ -1,29 +1,25 @@
-
-.red{
-    background-color: red;
-    height: 100px;
-}
-.blue{
-    background-color: blue;
-    height: 100px;
-}
-.red2{
-    background-color: sienna;
-    height: 100px;
-}
-.blue2{
-    background-color: seagreen;
-    height: 100px;
-}
-.site-logo{
-    width: 150px;
-}
-.site-ads{
-    width: 400px;
-}
 .container{
-    display:grid;
-    grid-template-columns:1fr 3fr 2fr;
-    column-gap: 10px;
-    row-gap: 10px;
+    height: 100%;;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 150px calc(100vh - 250px) 100px;
+    grid-template-areas: "header header"
+                         "main sidebar"
+                         "footer footer";
+}
+.header{
+    grid-area:header;
+    background-color: aquamarine;
+}
+.main{
+    grid-area:main;
+    background-color: burlywood;
+}
+.sidebar{
+    grid-area:sidebar;
+    background-color: blueviolet;
+}
+.footer{
+    grid-area:footer;
+    background-color: gray;
 }
