@@ -1,35 +1,29 @@
-.subtitle{
-    font-size: 60px;
-    font-weight:bold;
-    font-family: 'Kazkhsoft Korkem','Arial';
-    letter-spacing: -0.03em;
-    margin-bottom: 13px;
-    text-align: right;
+
+.red{
+    background-color: red;
+    height: 100px;
 }
-.text-center{
-    text-align: center;
+.blue{
+    background-color: blue;
+    height: 100px;
 }
-h1.global{
-    color: aqua;
+.red2{
+    background-color: sienna;
+    height: 100px;
 }
-h1.kz{
-    color: red;
+.blue2{
+    background-color: seagreen;
+    height: 100px;
 }
-h1.usa{
-    color: rebeccapurple;
+.site-logo{
+    width: 150px;
 }
-body{
-    text-align: center;
+.site-ads{
+    width: 400px;
 }
-.myDiv{
-    width: 300px;
-    height: 300px;
-    background-color: #0094ff;
-    margin-right: auto;
-    margin-left: auto;
-}
-.innerDiv{
-    background-color: bisque;
-    width: 100%;
-    height: 100%;
+.container{
+    display:grid;
+    grid-template-columns:1fr 3fr 2fr;
+    column-gap: 10px;
+    row-gap: 10px;
 }
