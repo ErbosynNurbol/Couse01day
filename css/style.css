@@ -1,16 +1,19 @@
-.div-juldyz{
-    display: inline-block;
-    position: relative;
-}
 
-.div-juldyz img{
-    width: 500px;
+.linkElorda{
+    color: #ffffff;
+    border-style: solid;
+    border-color: #223c50;
+    background-color: hwb(206 13% 69%);
+    padding: 10px 15px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 5px;
 }
-.title-juldyz{
-    position: absolute;
-    bottom: 30px;
-    left: 5px;
-    right: 5px;
-    text-align: center;
-    color: white;
+.linkElorda:hover{
+    background-color: white;
+    border-color: #223c50;
+    color:#223c50;
+    transition: .1s all ease-in;
 }
