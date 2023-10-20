@@ -1,20 +1,16 @@
-.container{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    background-color: gray; 
-    height: 50vh;
+.div-juldyz{
+    display: inline-block;
+    position: relative;
 }
-.container > div{
-    height: 100%;
-    width: 100%;
+
+.div-juldyz img{
+    width: 500px;
 }
-.div1{
-    background-color:aquamarine;
-}
-.div2{
-    background-color: blueviolet;
-}
-.div3{
-    background-color: cadetblue;
+.title-juldyz{
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+    right: 5px;
+    text-align: center;
+    color: white;
 }
