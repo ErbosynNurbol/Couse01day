@@ -1,19 +1,73 @@
-
-.linkElorda{
-    color: #ffffff;
-    border-style: solid;
-    border-color: #223c50;
-    background-color: hwb(206 13% 69%);
-    padding: 10px 15px;
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-    text-decoration: none;
-    border-radius: 5px;
+:root{
+    --el-main-color:#00A9FF;
+    --el-secondery-color:#89CFF3;
+    --el-link-color:#A0E9FF;
+    --el-link-hover-color:#A0E9FF50;
+    --el-bg-color:#fff;
 }
-.linkElorda:hover{
-    background-color: white;
-    border-color: #223c50;
-    color:#223c50;
-    transition: .1s all ease-in;
+body{
+    background-color: var(--el-bg-color);
+    height: 500px;
+}
+a{
+    text-decoration: none;
+}
+body a{
+    color:var(--el-link-color);
+}
+body a:hover{
+   color: var(--el-link-hover-color);
+}
+.mydiv{
+    width: 100px;
+    height: 100px;
+    background-color: var(--el-bg-color);
+    margin:0 auto;
+    visibility: visible; animation-name: fadeInRight; animation-delay: 0.3s;
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight
+}
+@media screen and (min-width:800px) and (max-width:1000px){
+    body{
+        background-color: #0094ff;
+    }
+}
+@media screen and (max-width:799px){
+    body{
+        background-color: red;
+    }
+}
+@media print{
+
 }
